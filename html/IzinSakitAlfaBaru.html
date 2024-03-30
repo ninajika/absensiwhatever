@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Izin Sakit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('politeknik.jpg'); /* Ganti 'background-image.jpg' dengan URL gambar latar belakang Anda */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: rgba(0, 123, 255, 0.7);
+            color: #fff;
+            padding: 20px;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.7);
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        input[type="file"] {
+            width: 90%;
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .radio-label {
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORM KETERANGAN </h1>
+    <form action="proses_izin.php" method="post" enctype="multipart/form-data">
+        <p class="radio-label">Jenis Izin:</p>
+        <input type="radio" id="sakit" name="jenis_izin" value="Sakit" required>
+        <label for="sakit">Sakit</label>
+        <input type="radio" id="izin" name="jenis_izin" value="Izin" required>
+        <label for="izin">Izin</label>
+        <input type="radio" id="alfa" name="jenis_izin" value="Alfa" required>
+        <label for="alfa">Alfa</label><br><br>
+        
+        <label for="alasan">Alasan Izin :</label><br>
+        <textarea id="alasan" name="alasan" rows="4" cols="50" required></textarea><br>
+        
+        <label for="file">Unggah File:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+        
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>

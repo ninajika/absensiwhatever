@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selamat Datang</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;background-image: url('politeknik.jpg'); /* Ganti 'background-image.jpg' dengan URL gambar latar belakang Anda */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .judul {
+            font-size: 36px;
+            margin-top: 20px;
+            background-color: rgba(0, 123, 255, 0.7);
+            color: #fff;
+            padding: 20px;
+        }
+        .logo {
+            width: 150px;
+            margin-top: 20px;
+        }
+        .subjudul {
+            font-size: 24px;
+            margin-top: 20px;
+            background-color: rgba(0, 123, 255, 0.7);
+            color: #fff;
+            padding: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        table, th, td {
+            border: 1px solid #777;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="judul">Selamat Datang</div>
+    <img class="logo" src="logo.jpg" alt="Logo">
+    <div class="subjudul">Detail Mahasiswa</div>
+    <table>
+        <tr>
+            <th>Nama Mahasiswa</th>
+            <th>Nomor Mahasiswa</th>
+            <th>Jurusan Mahasiswa</th>
+            <th>Jam Masuk</th>
+            <th>Jam Keluar</th>
+        </tr>
+        <tr>
+            <td>Mahasiswa 1</td>
+            <td>NIM 12345</td>
+            <td>Jurusan A</td>
+            <td>08:00</td>
+            <td>16:00</td>
+        </tr>
+        <tr>
+            <td>Mahasiswa 2</td>
+            <td>NIM 67890</td>
+            <td>Jurusan B</td>
+            <td>09:00</td>
+            <td>17:00</td>
+        </tr>
+    </table>
+    <button type="button">Masuk</button>
+    <button type="button">Izin</button>
+</body>
+</html>
